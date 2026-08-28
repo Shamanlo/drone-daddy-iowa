@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Quote | Drone Daddy Iowa</title>
+<meta name="description" content="Request an aerial photography quote from Drone Daddy Iowa. Serving North Liberty, Cedar Rapids, Iowa City, and the state of Iowa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="wordmark">DRONE DADDY <span>IOWA</span></a>
+  <ul class="nav-links">
+    <li><a href="construction.html">Construction</a></li>
+    <li><a href="real-estate.html">Real Estate</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="roof-property.html">Roof &amp; Property</a></li>
+    <li><a href="portfolio.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" aria-current="page">Quote</a></li>
+  </ul>
+</nav>
+
+<header class="phead">
+  <div class="phead-inner">
+    <span class="callout">Contact</span>
+    <h1>Request a quote</h1>
+    <p>Six fields. Most quotes come back the same day.</p>
+  </div>
+</header>
+
+<section class="band">
+  <div class="band-inner">
+    <form class="form" name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="quote">
+      <p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+
+      <div class="field">
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text">
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel">
+      </div>
+
+      <div class="field">
+        <label for="address">Property address or city</label>
+        <input id="address" name="address" type="text" required>
+      </div>
+
+      <div class="field">
+        <label for="type">Property type</label>
+        <select id="type" name="property_type" required>
+          <option value="">Select one</option>
+          <option>Construction / job site</option>
+          <option>Commercial property</option>
+          <option>Land, acreage, or farmland</option>
+          <option>Residential listing</option>
+          <option>Roof or property documentation</option>
+          <option>Event or venue</option>
+          <option>Something else</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="purpose">What is the imagery for?</label>
+        <select id="purpose" name="purpose" required>
+          <option value="">Select one</option>
+          <option>Marketing or a listing</option>
+          <option>Progress documentation</option>
+          <option>Inspection or condition record</option>
+          <option>Event coverage</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="timeline">Timeline</label>
+        <select id="timeline" name="timeline" required>
+          <option value="">Select one</option>
+          <option>This week</option>
+          <option>Within two weeks</option>
+          <option>This month</option>
+          <option>Recurring or ongoing</option>
+          <option>Flexible</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="notes">Anything else</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+
+      <p><button class="btn" type="submit">Send request</button></p>
+    </form>
+
+    <p class="lede" style="margin-top:3rem;color:var(--muted);font-size:0.95rem">
+      Prefer email? <a href="mailto:info@dronedaddyiowa.com">info@dronedaddyiowa.com</a>.
+      Most projects start at $350; travel and commercial work is quoted individually.
+    </p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div>
+      <h4>Drone Daddy Iowa</h4>
+      <p style="color:rgba(236,238,234,0.6)">Aerial photography and video.<br>North Liberty, Iowa.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="construction.html">Construction &amp; progress</a></li>
+        <li><a href="real-estate.html">Real estate &amp; land</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="roof-property.html">Roof &amp; property</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Request a quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@dronedaddyiowa.com">info@dronedaddyiowa.com</a></li>
+        <li>Phone — add number</li>
+      </ul>
+    </div>
+  </div>
+  <p class="legal">FAA Part 107 Certified Remote Pilot &middot; Insured &middot; Drone Daddy Iowa is a trade name of Charipar Web Services &middot; &copy; 2026</p>
+</footer>
+
+</body>
+</html>
