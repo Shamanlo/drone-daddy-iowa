@@ -578,3 +578,11 @@ svg{ display:block; }
 
 :focus-visible{ outline:2px solid var(--green); outline-offset:2px; }
 .section-dark :focus-visible, .site-header :focus-visible, .site-footer :focus-visible{ outline-color:var(--cream); }
+
+/* Vertical YouTube Shorts */
+.short-grid{
+  display:grid; gap:1.2rem;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  max-width:760px;
+}
+.yt-facade.yt-short{ aspect-ratio:9/16; }
